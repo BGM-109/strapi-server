@@ -26,6 +26,12 @@
         "videos",
         "audios"
       ]
+    },
+    "rep_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rep-item.rep-item",
+      "mappedBy": "logo"
     }
   }
 }
