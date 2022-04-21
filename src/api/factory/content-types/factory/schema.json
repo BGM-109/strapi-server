@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "factories",
+  "info": {
+    "singularName": "factory",
+    "pluralName": "factories",
+    "displayName": "Factory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "rep_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rep-item.rep-item",
+      "mappedBy": "factory"
+    }
+  }
+}
