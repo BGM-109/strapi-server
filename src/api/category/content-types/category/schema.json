@@ -19,6 +19,12 @@
       "relation": "oneToMany",
       "target": "api::rep-item.rep-item",
       "mappedBy": "category"
+    },
+    "selling_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::selling-item.selling-item",
+      "mappedBy": "category"
     }
   }
 }

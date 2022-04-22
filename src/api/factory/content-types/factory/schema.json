@@ -22,6 +22,12 @@
       "relation": "oneToMany",
       "target": "api::rep-item.rep-item",
       "mappedBy": "factory"
+    },
+    "selling_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::selling-item.selling-item",
+      "mappedBy": "factory"
     }
   }
 }
