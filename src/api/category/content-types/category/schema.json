@@ -25,6 +25,12 @@
       "relation": "oneToMany",
       "target": "api::selling-item.selling-item",
       "mappedBy": "category"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "category"
     }
   }
 }

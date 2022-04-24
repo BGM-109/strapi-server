@@ -4,7 +4,8 @@
   "info": {
     "singularName": "brand",
     "pluralName": "brands",
-    "displayName": "Brand"
+    "displayName": "Brand",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,21 @@
       "type": "string"
     },
     "profileImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "brands"
     }
   }
 }
