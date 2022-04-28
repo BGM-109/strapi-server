@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "sellers",
+  "collectionName": "n_brands",
   "info": {
-    "singularName": "seller",
-    "pluralName": "sellers",
-    "displayName": "Seller",
-    "description": ""
+    "singularName": "n-brand",
+    "pluralName": "n-brands",
+    "displayName": "nBrand"
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +14,14 @@
     "name": {
       "type": "string"
     },
+    "name_kor": {
+      "type": "string"
+    },
     "rep_items": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::rep-item.rep-item",
-      "mappedBy": "seller"
-    },
-    "name_kor": {
-      "type": "string"
+      "mappedBy": "n_brand"
     }
   }
 }

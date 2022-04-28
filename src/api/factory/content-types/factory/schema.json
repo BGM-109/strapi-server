@@ -4,7 +4,8 @@
   "info": {
     "singularName": "factory",
     "pluralName": "factories",
-    "displayName": "Factory"
+    "displayName": "Factory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,9 @@
       "relation": "oneToMany",
       "target": "api::selling-item.selling-item",
       "mappedBy": "factory"
+    },
+    "name_kor": {
+      "type": "string"
     }
   }
 }
