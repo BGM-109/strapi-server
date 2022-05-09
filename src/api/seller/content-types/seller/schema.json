@@ -23,6 +23,12 @@
     },
     "name_kor": {
       "type": "string"
+    },
+    "replicas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::replica.replica",
+      "mappedBy": "seller"
     }
   }
 }

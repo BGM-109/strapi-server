@@ -22,6 +22,12 @@
       "relation": "oneToMany",
       "target": "api::rep-item.rep-item",
       "mappedBy": "n_brand"
+    },
+    "replicas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::replica.replica",
+      "mappedBy": "n_brand"
     }
   }
 }

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replicas",
+  "info": {
+    "singularName": "replica",
+    "pluralName": "replicas",
+    "displayName": "replica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "name_kor": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "replicas"
+    },
+    "factory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::factory.factory",
+      "inversedBy": "replicas"
+    },
+    "n_brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::n-brand.n-brand",
+      "inversedBy": "replicas"
+    },
+    "seller": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::seller.seller",
+      "inversedBy": "replicas"
+    },
+    "link": {
+      "type": "string"
+    },
+    "quality": {
+      "type": "boolean"
+    },
+    "thumnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
